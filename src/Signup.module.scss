@@ -1,0 +1,106 @@
+.signup{
+    width: 100%;
+    display: flex;
+    
+    
+    height: 100vh;
+    &__illsutartion{
+        width: 100%;
+        display: none;
+        background-color: var(--image-background-color);
+        border-right: 2px solid var(--text-muted);
+        img{
+            margin-top: 115px;
+            display: block;
+            width:100%;
+        }
+        .signup__illsuration__textual{
+            text-align: center;
+            width:75%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #262626;
+                opacity: .8;
+            h3{
+                margin-bottom: 12px;
+                
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                width:330px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+}
+
+.signup_form_container{
+    width:70%;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.signup_form_wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+        margin-bottom: 28px;
+    }
+    form{
+        width: 100%;
+
+        .terms_check{
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:12px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            p{
+                color: var(--text-muted);
+            }
+            &__checkbox{
+                
+                input[type=checkbox]{
+                    border: 1px solid #fff;
+                }
+
+                
+            }
+        }
+
+        input[type="submit"]{
+            width:65%;
+            height:40px;
+            background-color: var(--control-color);
+            margin-top: 12px;
+            color:#fff;
+            border:1px solid #fff;
+            border-radius: 3px;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width:768px){
+    .signup{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        &__illsutartion{
+            display: block;
+            }
+    }
+    
+}
